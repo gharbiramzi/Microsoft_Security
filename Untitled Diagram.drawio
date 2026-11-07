@@ -1,0 +1,161 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="U1YaIu1Oed3PCFBSWaQc">
+    <mxGraphModel dx="1473" dy="977" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="920" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ttl" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=25;fontStyle=1;fontColor=#17365D;" value="SIEM — ANIMATION DU FLUX DE DÉTECTION ET DE RÉPONSE" vertex="1">
+          <mxGeometry height="48" width="1400" x="35" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=15;fontColor=#475569;" value="Les événements progressent des sources vers le SIEM, sont corrélés, puis transmis au SOC pour investigation et réponse." vertex="1">
+          <mxGeometry height="35" width="1400" x="35" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="sources" parent="1" style="swimlane;html=1;rounded=1;startSize=34;fillColor=#EAF2FF;swimlaneFillColor=#F7FAFF;strokeColor=#3B82F6;fontStyle=1;fontSize=16;" value="1  SOURCES DE JOURNAUX" vertex="1">
+          <mxGeometry height="555" width="255" x="35" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="mail" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4E4;strokeColor=#E66B75;fontSize=15;" value="Email security" vertex="1">
+          <mxGeometry height="48" width="195" x="65" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="edr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEBFF;strokeColor=#4C8ED9;fontSize=15;" value="Endpoints · EDR" vertex="1">
+          <mxGeometry height="48" width="195" x="65" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="fw" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0D9;strokeColor=#E59A32;fontSize=15;" value="Firewalls · SD-WAN" vertex="1">
+          <mxGeometry height="48" width="195" x="65" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="identity" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F1FF;strokeColor=#5B9BD5;fontSize=15;" value="Entra ID" vertex="1">
+          <mxGeometry height="48" width="195" x="65" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEE8FF;strokeColor=#9B82D8;fontSize=15;" value="Azure workloads" vertex="1">
+          <mxGeometry height="48" width="195" x="65" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="apps" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#999999;fontSize=15;" value="Applications &amp; servers" vertex="1">
+          <mxGeometry height="48" width="195" x="65" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="collect" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8ED;strokeColor=#E59A32;strokeWidth=2;fontSize=16;fontStyle=1;spacing=12;" value="2  COLLECTE &amp; INGESTION&#xa;&#xa;Connecteurs API · agents EDR&#xa;Syslog · Cloud export · Log forwarder&#xa;&#xa;Horodatage et réception des événements" vertex="1">
+          <mxGeometry height="240" width="260" x="345" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="platform" parent="1" style="swimlane;html=1;rounded=1;startSize=34;fillColor=#E5F7F2;swimlaneFillColor=#F4FBF8;strokeColor=#10A88A;fontStyle=1;fontSize=16;" value="3  PLATEFORME SIEM" vertex="1">
+          <mxGeometry height="555" width="420" x="660" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="parse" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#10A88A;fontSize=15;" value="PARSER&#xa;Normaliser dans un schéma commun" vertex="1">
+          <mxGeometry height="65" width="340" x="700" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="enrich" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#10A88A;fontSize=15;" value="ENRICHIR&#xa;Contexte actif · utilisateur · asset · Threat Intel" vertex="1">
+          <mxGeometry height="65" width="340" x="700" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="correlate" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#10A88A;fontSize=15;" value="CORRÉLER&#xa;Relier les événements multi-sources / multi-utilisateurs" vertex="1">
+          <mxGeometry height="65" width="340" x="700" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="detect" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8B5CF6;strokeWidth=2;fontSize=15;fontStyle=1;" value="DÉTECTER&#xa;Règles · analytics · seuils → alerte" vertex="1">
+          <mxGeometry height="65" width="340" x="700" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="store" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;fontSize=14;" value="LOG STORE&#xa;Recherche · threat hunting · rétention · reporting" vertex="1">
+          <mxGeometry height="75" width="340" x="700" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="soc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8ED;strokeColor=#E59A32;strokeWidth=2;fontSize=16;spacing=12;" value="4  SOC — INVESTIGATION&#xa;&#xa;Alerte reçue dans la file SOC&#xa;1. Triage : vrai positif / faux positif&#xa;2. Recherche dans les logs conservés&#xa;3. Construction de la chronologie&#xa;4. Périmètre : autres utilisateurs / systèmes ?&#xa;&#xa;Validation par l&#39;analyste" vertex="1">
+          <mxGeometry height="300" width="290" x="1150" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D79B00;fontSize=15;fontStyle=1;" value="Incident confirmé ?&#xa;Playbook pré-approuvé ?" vertex="1">
+          <mxGeometry height="100" width="250" x="1170" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="response" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFFAF1;strokeColor=#43B66A;strokeWidth=2;fontSize=15;spacing=12;" value="5  RÉPONSE / CONTAINMENT&#xa;&#xa;SOAR ou contrôle intégré (si configuré)&#xa;• Isoler le poste via EDR&#xa;• Bloquer le domaine via FW / SD-WAN&#xa;• Désactiver le compte / sessions&#xa;• Restreindre l&#39;accès Azure&#xa;&#xa;Vérifier · conserver les preuves · clôturer / escalader" vertex="1">
+          <mxGeometry height="155" width="330" x="1125" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#CBD5E1;fontSize=13;fontColor=#334155;" value="Animation : les pointillés représentent l&#39;arrivée des logs ; les flèches pleines montrent le traitement SIEM, la création d&#39;alerte, l&#39;investigation SOC et les actions de réponse. La réponse automatique dépend des intégrations et des autorisations configurées." vertex="1">
+          <mxGeometry height="110" width="1040" x="35" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" source="mail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="collect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" source="edr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;entryX=0;entryY=0.1625;" target="collect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" source="fw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;entryX=0;entryY=0.45416666666666666;" target="collect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" source="identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;entryX=0;entryY=0.7458333333333333;" target="collect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" source="cloud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="collect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="303" y="509" />
+              <mxPoint x="303" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" source="apps" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="collect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="579" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" source="collect" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#10A88A;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="parse">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="653" y="380" />
+              <mxPoint x="653" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" source="parse" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#10A88A;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="enrich">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" source="enrich" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#10A88A;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="correlate">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" source="correlate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#8B5CF6;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="detect">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" source="detect" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E66B75;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.46153846153846156;entryX=0;entryY=0.9;" target="soc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" source="store" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#64748B;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="soc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="558" />
+              <mxPoint x="1281" y="558" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m13" edge="1" parent="1" source="soc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#E59A32;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="decision">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#43B66A;strokeWidth=3;;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.5151515151515151;entryY=0;" target="response">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" source="enrich" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#64748B;strokeWidth=3;dashed=1;flowAnimation=1;endArrow=classic;html=1;labelBackgroundColor=default;defaultLabelBackgroundColor=page;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="store">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="684" y="328" />
+              <mxPoint x="684" y="613" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
