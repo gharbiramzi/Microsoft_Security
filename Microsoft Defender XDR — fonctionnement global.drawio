@@ -1,0 +1,147 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="D7qLyfMJIg-GYcesLbeF">
+    <mxGraphModel dx="1554" dy="825" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Microsoft Defender XDR — fonctionnement global" vertex="1">
+          <mxGeometry height="35" width="760" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="mde" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Microsoft Defender for Endpoint&lt;br&gt;&lt;small&gt;Postes · serveurs · EDR&lt;/small&gt;" vertex="1">
+          <mxGeometry height="65" width="165" x="40" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="mdo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Microsoft Defender for Office 365&lt;br&gt;&lt;small&gt;Email · Teams · fichiers&lt;/small&gt;" vertex="1">
+          <mxGeometry height="65" width="165" x="230" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="mdi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Microsoft Defender for Identity&lt;br&gt;&lt;small&gt;Active Directory · ITDR&lt;/small&gt;" vertex="1">
+          <mxGeometry height="65" width="165" x="420" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="mdca" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Defender for Cloud Apps&lt;br&gt;&lt;small&gt;SaaS · Shadow IT · OAuth&lt;/small&gt;" vertex="1">
+          <mxGeometry height="65" width="165" x="610" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="xdr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="MICROSOFT DEFENDER XDR&lt;br&gt;&lt;small&gt;Collecte des signaux · Corrélation multi-domaines · Contexte d&#39;attaque&lt;/small&gt;" vertex="1">
+          <mxGeometry height="85" width="475" x="170" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="incident" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Incident unifié&lt;br&gt;&lt;small&gt;Alertes corrélées · chronologie · entités impliquées&lt;/small&gt;" vertex="1">
+          <mxGeometry height="70" width="275" x="270" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="soc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" value="SOC / Analyste sécurité&lt;br&gt;&lt;small&gt;Triage · investigation · qualification · priorisation&lt;/small&gt;" vertex="1">
+          <mxGeometry height="70" width="275" x="270" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="hunt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;" value="Advanced Hunting&lt;br&gt;&lt;small&gt;Recherche proactive · KQL&lt;/small&gt;" vertex="1">
+          <mxGeometry height="70" width="165" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="response" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" value="Réponse &amp; remédiation&lt;br&gt;&lt;small&gt;Isoler · bloquer · supprimer · sécuriser&lt;/small&gt;" vertex="1">
+          <mxGeometry height="70" width="165" x="610" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="sentinel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Microsoft Sentinel — SIEM / SOAR&lt;br&gt;&lt;small&gt;Ingestion Defender XDR · corrélation étendue · règles analytiques · playbooks Logic Apps&lt;/small&gt;" vertex="1">
+          <mxGeometry height="75" width="355" x="230" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="external" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;" value="Sources tierces&lt;br&gt;&lt;small&gt;Firewall · réseau · IAM · cloud non-Microsoft&lt;/small&gt;" vertex="1">
+          <mxGeometry height="75" width="165" x="610" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="cloud" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" value="Defender for Cloud&lt;br&gt;&lt;small&gt;CSPM · workloads Azure/AWS/GCP&lt;br&gt;Solution complémentaire&lt;/small&gt;" vertex="1">
+          <mxGeometry height="85" width="100" x="40" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="out" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;" value="Pilotage &amp; amélioration&lt;br&gt;&lt;small&gt;Mesures · rapports · tuning des détections&lt;/small&gt;" vertex="1">
+          <mxGeometry height="60" width="275" x="270" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="mde" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.8939393939393939;exitY=1;entryX=0.03684210526315789;entryY=0;" target="xdr" value="Signaux EDR">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="mdo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.3;entryY=0;" target="xdr" value="Signaux email">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="mdi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;entryX=0.7;entryY=0;" target="xdr" value="Signaux identité">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="mdca" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;exitX=0.10606060606060606;exitY=1;entryX=0.9631578947368421;entryY=0;" target="xdr" value="Signaux SaaS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="xdr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#9673a6;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="incident" value="Corrélation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="incident" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="soc" value="Investigation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="hunt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#666666;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="soc" value="Résultats KQL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="soc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;strokeWidth=2;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="response" value="Actions validées">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#82b366;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="mde" value="Ex. isoler appareil">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="693" y="165" />
+              <mxPoint x="123" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#82b366;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="mdo" value="Ex. remédier email">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="686" y="172" />
+              <mxPoint x="408" y="172" />
+              <mxPoint x="408" y="108" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#82b366;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="mdi" value="Ex. sécuriser identité">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="158" />
+              <mxPoint x="598" y="158" />
+              <mxPoint x="598" y="108" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="soc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d79b00;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="sentinel" value="Incidents / alertes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="external" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="sentinel" value="Logs / événements">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="sentinel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d79b00;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="out" value="Reporting / automatisation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="cloud" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#666666;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPlacement=auto;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="sentinel" value="Alertes cloud selon intégration">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="358" />
+              <mxPoint x="221" y="358" />
+              <mxPoint x="221" y="538" />
+              <mxPoint x="214" y="538" />
+              <mxPoint x="214" y="603" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;align=center;fontSize=11;fontColor=#666666;" value="Trait plein : flux principal / corrélation   ·   Trait pointillé : intégration ou action de réponse selon configuration" vertex="1">
+          <mxGeometry height="25" width="735" x="40" y="765" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
